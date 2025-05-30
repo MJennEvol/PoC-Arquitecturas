@@ -1,4 +1,15 @@
-DROP TABLE IF EXISTS todo;
+CREATE TABLE todos (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    completed BOOLEAN NOT NULL DEFAULT FALSE,
+    createAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
+INSERT INTO todos (title, description, completed) VALUES ('Comprar leche', 'Leche descremada', FALSE);
+INSERT INTO todos (title, description, completed) VALUES ('Comprar pan', 'Pan integral', FALSE);
+INSERT INTO todos (title, description, completed) VALUES ('Comprar harina', 'Harina de trigo', FALSE);
+
 
 
 CREATE TABLE products (

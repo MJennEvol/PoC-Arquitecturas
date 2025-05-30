@@ -1,7 +1,6 @@
 package com.mjenn.hexagonal_poc.hexagonal.todos.infrastructure.entities;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,8 +19,8 @@ import lombok.NoArgsConstructor;
 public class TodoEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     private String title;
     private String description;

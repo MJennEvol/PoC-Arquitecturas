@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/api/students")
+@RequestMapping("/api/layers/students")
 public class StudentController {
 
     private final StudentService studentService;
